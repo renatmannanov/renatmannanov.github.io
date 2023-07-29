@@ -12,6 +12,6 @@ Start developing your Jekyll website.
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
-    {% include srort-read-card.html %}
+    {% include short-read-card.html %}
   {% endfor %}
 </ul>
