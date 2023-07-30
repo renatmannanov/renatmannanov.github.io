@@ -5,11 +5,22 @@ title: "raymann's story"
 
 {% include header.html %}
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-    {% include short-read-card.html title=content.title %}
-  {% endfor %}
-</ul>
+<div>
+    {% for post in site.posts %}
+
+        {% assign currentdate = post.date | date: "%Y" %}
+            {% if currentdate != date %}
+                {% unless forloop.first %}</div>{% endunless %}
+                <div class=yearbox id="y{{post.date | date: "%Y"}}">
+                <div class=yeartext>{{ currentdate }}</div>
+                <hr class=yearline/>
+                </div>
+                <div class=cardbox>
+                {% assign date = currentdate %}
+            {% endif %}
+        {% include short-read-card.html title=post.title url=post.url %}
+        {% if forloop.last %}</div>{% endif %}
+
+    {% endfor %}
+</div>
+

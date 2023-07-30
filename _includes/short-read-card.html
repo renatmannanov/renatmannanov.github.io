@@ -1,30 +1,96 @@
-<!DOCTYPE html>
 <html lang="{{ site.lang | default: 'en-US' }}">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
+  </head>
+
+  <body>
+    <!-- <div class="cards-line"> -->
+      <div class="card short-read">
+        <div class="container">
+          <div class="title">
+            {{ post.title}}
+          </div>
+          <div class="description">
+            История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда 
+          </div>
+          <div class="tags-line">
+            <div class="tag personal">#personal</div>
+            <div class="tag general">#shortread</div>
+            <div class="tag personal">#personal</div>
+            <div class="tag general">#shortread</div>
+            <div class="tag personal">#personal</div>
+            <div class="tag general">#shortread</div>
+          </div>
+        </div>
+      </div>
+    <!-- </div> -->
+  </body>
+
+  <style>
     .card {
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-      transition: 0.3s;
-      width: 40%;
+      border: 1px solid;
+      border-color: black;
+      margin: 0 20px 0 0;
+      height: 205px;
     }
-    
+
+    /* придумать как менять класс между шорт/лонг рид */
+    .card.short-read {
+      width: 460px;
+    }
+
+    .card.long-read {
+      width: 700px;
+    }
+    /*  */
+
     .card:hover {
       box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
     
     .container {
-      padding: 2px 16px;
+      padding: 16px 14px;
+      height: 80%;
+      position: relative;
+
+      /* временно пока не придумаю как адекватно скрыть/ограничить/растягивать теги */
+      overflow: hidden;
+      text-overflow: ellipsis;
+      /*  */
+    }
+
+    .title {
+      font-size: 24px;
+      line-height: 24px;
+
+      /* таким образом обезаю заголовок/описание, чтобы не вылезало за края, мб потом ограничивать количестком символов */
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      /*  */
+    }
+
+    .description {
+      font-size: 16px;
+      padding: 20px 0 0 0;
+
+      /* таким образом обезаю заголовок/описание, чтобы не вылезало за края, мб потом ограничивать количестком символов */
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      /*  */
+    }
+
+    .tags-line {
+      display: inline-flex;
+      position: absolute;
+      bottom: 0;
+    }
+
+    .tag {
+      padding: 0 16px 0 0;
     }
     </style>
-  </head>
-
-  <body>
-    <div class="card">
-      <div class="container">
-        <h4><b>John Doe</b></h4>
-        <p>{{ include.title }}</p>
-      </div>
-    </div>
-  </body>
 </html>

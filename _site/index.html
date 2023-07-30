@@ -26,7 +26,26 @@
         </div>
     </body>
 
-    <style>       
+    <style>
+        .yearbox {
+        padding: 30px;
+        margin: 0 30px 0 0;
+        font-size: 24px;
+        line-height: 24px;
+        display: inline-flex;
+        width: 100%;
+        }
+
+        .yearline {
+        width: 95%;
+
+        }
+
+        .cardbox {
+        margin: 30px;
+        display: inline-flex;
+        }
+
         body { 
         margin: 0;
         font-family: 'IBM Plex Mono';
@@ -36,22 +55,22 @@
         overflow: hidden;
         background-color: #ffff;
         padding: 20px;
-        line-height: 25px;
-        font-size: 25px;
-        font-weight: bold;
+        line-height: 24px;
+        font-size: 24px;
+        /* font-weight: bold */
         color: black;
         }
         
         div.logo {
         text-align: left;
-        padding: 10px;
+        padding: 10px 10px 0 10px;
         text-decoration: none;
         border-radius: 4px;
         }
 
         .header div.panel a {
         float: left;
-        padding: 10px;
+        padding: 0 10px 10px 10px;
         }
 
         .subject {
@@ -94,79 +113,335 @@
     </style>
 </html>
 
-<ul>
-  
-    <li>
-      <a href="/blog/new-post">New Post</a>
-    </li>
-    &lt;!DOCTYPE html&gt;
-<html lang="en-US">
+<div>
+    
+
+        
+            
+                
+                <div class="yearbox" id="y2023">
+                <div class="yeartext">2023</div>
+                <hr class="yearline" />
+                </div>
+                <div class="cardbox">
+                
+            
+        <html lang="en-US">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
+  </head>
+
+  <body>
+    <!-- <div class="cards-line"> -->
+      <div class="card short-read">
+        <div class="container">
+          <div class="title">
+            New Post
+          </div>
+          <div class="description">
+            История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда 
+          </div>
+          <div class="tags-line">
+            <div class="tag personal">#personal</div>
+            <div class="tag general">#shortread</div>
+            <div class="tag personal">#personal</div>
+            <div class="tag general">#shortread</div>
+            <div class="tag personal">#personal</div>
+            <div class="tag general">#shortread</div>
+          </div>
+        </div>
+      </div>
+    <!-- </div> -->
+  </body>
+
+  <style>
     .card {
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-      transition: 0.3s;
-      width: 40%;
+      border: 1px solid;
+      border-color: black;
+      margin: 0 20px 0 0;
+      height: 205px;
     }
-    
+
+    /* придумать как менять класс между шорт/лонг рид */
+    .card.short-read {
+      width: 460px;
+    }
+
+    .card.long-read {
+      width: 700px;
+    }
+    /*  */
+
     .card:hover {
       box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
     
     .container {
-      padding: 2px 16px;
+      padding: 16px 14px;
+      height: 80%;
+      position: relative;
+
+      /* временно пока не придумаю как адекватно скрыть/ограничить/растягивать теги */
+      overflow: hidden;
+      text-overflow: ellipsis;
+      /*  */
+    }
+
+    .title {
+      font-size: 24px;
+      line-height: 24px;
+
+      /* таким образом обезаю заголовок/описание, чтобы не вылезало за края, мб потом ограничивать количестком символов */
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      /*  */
+    }
+
+    .description {
+      font-size: 16px;
+      padding: 20px 0 0 0;
+
+      /* таким образом обезаю заголовок/описание, чтобы не вылезало за края, мб потом ограничивать количестком символов */
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      /*  */
+    }
+
+    .tags-line {
+      display: inline-flex;
+      position: absolute;
+      bottom: 0;
+    }
+
+    .tag {
+      padding: 0 16px 0 0;
     }
     </style>
+</html>
+
+        
+
+    
+
+        
+            
+        <html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
   <body>
-    <div class="card">
-      <div class="container">
-        <h4><b>John Doe</b></h4>
-        <p></p>
+    <!-- <div class="cards-line"> -->
+      <div class="card short-read">
+        <div class="container">
+          <div class="title">
+            My First Page
+          </div>
+          <div class="description">
+            История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда 
+          </div>
+          <div class="tags-line">
+            <div class="tag personal">#personal</div>
+            <div class="tag general">#shortread</div>
+            <div class="tag personal">#personal</div>
+            <div class="tag general">#shortread</div>
+            <div class="tag personal">#personal</div>
+            <div class="tag general">#shortread</div>
+          </div>
+        </div>
       </div>
-    </div>
+    <!-- </div> -->
   </body>
-</html>
 
-  
-    <li>
-      <a href="/blog/new-post-layout">My First Page</a>
-    </li>
-    &lt;!DOCTYPE html&gt;
-<html lang="en-US">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
+  <style>
     .card {
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-      transition: 0.3s;
-      width: 40%;
+      border: 1px solid;
+      border-color: black;
+      margin: 0 20px 0 0;
+      height: 205px;
     }
-    
+
+    /* придумать как менять класс между шорт/лонг рид */
+    .card.short-read {
+      width: 460px;
+    }
+
+    .card.long-read {
+      width: 700px;
+    }
+    /*  */
+
     .card:hover {
       box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
     
     .container {
-      padding: 2px 16px;
+      padding: 16px 14px;
+      height: 80%;
+      position: relative;
+
+      /* временно пока не придумаю как адекватно скрыть/ограничить/растягивать теги */
+      overflow: hidden;
+      text-overflow: ellipsis;
+      /*  */
+    }
+
+    .title {
+      font-size: 24px;
+      line-height: 24px;
+
+      /* таким образом обезаю заголовок/описание, чтобы не вылезало за края, мб потом ограничивать количестком символов */
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      /*  */
+    }
+
+    .description {
+      font-size: 16px;
+      padding: 20px 0 0 0;
+
+      /* таким образом обезаю заголовок/описание, чтобы не вылезало за края, мб потом ограничивать количестком символов */
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      /*  */
+    }
+
+    .tags-line {
+      display: inline-flex;
+      position: absolute;
+      bottom: 0;
+    }
+
+    .tag {
+      padding: 0 16px 0 0;
     }
     </style>
+</html>
+
+        
+
+    
+
+        
+            
+                </div>
+                <div class="yearbox" id="y2022">
+                <div class="yeartext">2022</div>
+                <hr class="yearline" />
+                </div>
+                <div class="cardbox">
+                
+            
+        <html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
   <body>
-    <div class="card">
-      <div class="container">
-        <h4><b>John Doe</b></h4>
-        <p></p>
+    <!-- <div class="cards-line"> -->
+      <div class="card short-read">
+        <div class="container">
+          <div class="title">
+            My First Page
+          </div>
+          <div class="description">
+            История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда 
+          </div>
+          <div class="tags-line">
+            <div class="tag personal">#personal</div>
+            <div class="tag general">#shortread</div>
+            <div class="tag personal">#personal</div>
+            <div class="tag general">#shortread</div>
+            <div class="tag personal">#personal</div>
+            <div class="tag general">#shortread</div>
+          </div>
+        </div>
       </div>
-    </div>
+    <!-- </div> -->
   </body>
+
+  <style>
+    .card {
+      border: 1px solid;
+      border-color: black;
+      margin: 0 20px 0 0;
+      height: 205px;
+    }
+
+    /* придумать как менять класс между шорт/лонг рид */
+    .card.short-read {
+      width: 460px;
+    }
+
+    .card.long-read {
+      width: 700px;
+    }
+    /*  */
+
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    
+    .container {
+      padding: 16px 14px;
+      height: 80%;
+      position: relative;
+
+      /* временно пока не придумаю как адекватно скрыть/ограничить/растягивать теги */
+      overflow: hidden;
+      text-overflow: ellipsis;
+      /*  */
+    }
+
+    .title {
+      font-size: 24px;
+      line-height: 24px;
+
+      /* таким образом обезаю заголовок/описание, чтобы не вылезало за края, мб потом ограничивать количестком символов */
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      /*  */
+    }
+
+    .description {
+      font-size: 16px;
+      padding: 20px 0 0 0;
+
+      /* таким образом обезаю заголовок/описание, чтобы не вылезало за края, мб потом ограничивать количестком символов */
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      /*  */
+    }
+
+    .tags-line {
+      display: inline-flex;
+      position: absolute;
+      bottom: 0;
+    }
+
+    .tag {
+      padding: 0 16px 0 0;
+    }
+    </style>
 </html>
 
-  
-</ul>
+        </div>
+
+    
+</div>
+
 
   </body>
 </html>
