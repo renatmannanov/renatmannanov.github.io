@@ -1,11 +1,9 @@
 ---
 layout: default
-title: "Happy Jekylling!"
+title: "raymann's story"
 ---
 
-## You're ready to go!
-
-Start developing your Jekyll website.
+{% include header.html %}
 
 <ul>
   {% for post in site.posts %}
