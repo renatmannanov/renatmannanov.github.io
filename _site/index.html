@@ -12,19 +12,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="https://fonts.googleapis.com/css?family=IBM Plex Mono" rel="stylesheet" />
     </head>
-
     <body>
         <div class="header">
             <div class="logo">ray mann's story</div>
+            <!-- разделить хидер и панель с кнопками на разные инклуды, чтобы удобно было вставлять на рахные страницы т.к. навигация не везде нужна -->
             <div class="panel">
-                <a class="subject personal" href="#home">personal</a>
-                <a class="subject professional" href="#contact">professional</a>
-                <a class="subject hobby" href="#about">hobby</a>
-                <a class="subject sport" href="#about">sport</a>
-                <a class="subject skills" href="#about">skills</a>
+                <!-- написать, чтобы при клике вешался класс active для постоянного подчеркивания, а при другом клике удалялся -->
+                <!-- а также активировать/деактивировать кнопки, если таких тегов/категорий не существует -->
+                <div class="btn subject all" onclick="filterObjects('all')">all</div>
+                <div class="btn subject personal" onclick="filterObjects('personal')">personal</div>
+                <div class="btn subject professional" onclick="filterObjects('professional')">professional</div>
+                <div class="btn subject hobby" onclick="filterObjects('hobby')">hobby</div>
+                <div class="btn subject sport" onclick="filterObjects('sport')">sport</div>
+                <div class="btn subject skills" onclick="filterObjects('skills')">skills</div>
             </div>
         </div>
     </body>
+    
 
     <style>
         .yearbox {
@@ -38,7 +42,6 @@
 
         .yearline {
         width: 95%;
-
         }
 
         .cardbox {
@@ -65,7 +68,6 @@
         text-align: left;
         padding: 10px 10px 0 10px;
         text-decoration: none;
-        border-radius: 4px;
         }
 
         .header div.panel a {
@@ -73,11 +75,19 @@
         padding: 0 10px 10px 10px;
         }
 
+        .panel {
+        display: inline-flex;
+        padding: 0px 10px 0 10px;
+        }
+
         .subject {
             text-decoration: none;
+            padding: 0 20px 0 0;
+            cursor: pointer;
         }
         .subject:hover {
             text-decoration:underline;
+    
         }
         .subject.active {
             text-decoration:underline;
@@ -126,32 +136,31 @@
                 <div class="cardbox">
                 
             
-        <html lang="en-US">
+
+            <html lang="en-US">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
   <body>
-    <!-- <div class="cards-line"> -->
-      <div class="card short-read">
-        <div class="container">
-          <div class="title">
-            New Post
+    <a class="card box short-read professional" href="/blog/new-post">
+      <div class="container">
+        <div class="title">
+          Post 3
+        </div>
+        <div class="content">
+          История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда 
+        </div>
+        <div class="tags-line">
+          
+          <div class="tag personal">
+            short-read
           </div>
-          <div class="description">
-            История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда 
-          </div>
-          <div class="tags-line">
-            <div class="tag personal">#personal</div>
-            <div class="tag general">#shortread</div>
-            <div class="tag personal">#personal</div>
-            <div class="tag general">#shortread</div>
-            <div class="tag personal">#personal</div>
-            <div class="tag general">#shortread</div>
-          </div>
+          
         </div>
       </div>
-    <!-- </div> -->
+    </a>
+    <script src="scripts.js"></script>
   </body>
 
   <style>
@@ -160,22 +169,32 @@
       border-color: black;
       margin: 0 20px 0 0;
       height: 205px;
+      color:black;
+      text-decoration: none;
+      cursor: pointer;
     }
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    /* классы  box и show для фильтрации по категориям*/
+    .box {
+      display: none;
+    } 
+    .show {
+      display: block;
+    }
+    /*  */
 
     /* придумать как менять класс между шорт/лонг рид */
     .card.short-read {
       width: 460px;
     }
-
     .card.long-read {
       width: 700px;
     }
     /*  */
 
-    .card:hover {
-      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    }
-    
     .container {
       padding: 16px 14px;
       height: 80%;
@@ -199,7 +218,7 @@
       /*  */
     }
 
-    .description {
+    .content {
       font-size: 16px;
       padding: 20px 0 0 0;
 
@@ -222,6 +241,7 @@
     }
     </style>
 </html>
+
 
         
 
@@ -229,32 +249,31 @@
 
         
             
-        <html lang="en-US">
+
+            <html lang="en-US">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
   <body>
-    <!-- <div class="cards-line"> -->
-      <div class="card short-read">
-        <div class="container">
-          <div class="title">
-            My First Page
+    <a class="card box long-read personal" href="/blog/new-post-layout">
+      <div class="container">
+        <div class="title">
+          Post 1
+        </div>
+        <div class="content">
+          История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда 
+        </div>
+        <div class="tags-line">
+          
+          <div class="tag personal">
+            long-read
           </div>
-          <div class="description">
-            История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда 
-          </div>
-          <div class="tags-line">
-            <div class="tag personal">#personal</div>
-            <div class="tag general">#shortread</div>
-            <div class="tag personal">#personal</div>
-            <div class="tag general">#shortread</div>
-            <div class="tag personal">#personal</div>
-            <div class="tag general">#shortread</div>
-          </div>
+          
         </div>
       </div>
-    <!-- </div> -->
+    </a>
+    <script src="scripts.js"></script>
   </body>
 
   <style>
@@ -263,22 +282,32 @@
       border-color: black;
       margin: 0 20px 0 0;
       height: 205px;
+      color:black;
+      text-decoration: none;
+      cursor: pointer;
     }
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    /* классы  box и show для фильтрации по категориям*/
+    .box {
+      display: none;
+    } 
+    .show {
+      display: block;
+    }
+    /*  */
 
     /* придумать как менять класс между шорт/лонг рид */
     .card.short-read {
       width: 460px;
     }
-
     .card.long-read {
       width: 700px;
     }
     /*  */
 
-    .card:hover {
-      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    }
-    
     .container {
       padding: 16px 14px;
       height: 80%;
@@ -302,7 +331,7 @@
       /*  */
     }
 
-    .description {
+    .content {
       font-size: 16px;
       padding: 20px 0 0 0;
 
@@ -325,6 +354,7 @@
     }
     </style>
 </html>
+
 
         
 
@@ -340,32 +370,31 @@
                 <div class="cardbox">
                 
             
-        <html lang="en-US">
+
+            <html lang="en-US">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
   <body>
-    <!-- <div class="cards-line"> -->
-      <div class="card short-read">
-        <div class="container">
-          <div class="title">
-            My First Page
+    <a class="card box short-read personal" href="/blog/new">
+      <div class="container">
+        <div class="title">
+          Post 2
+        </div>
+        <div class="content">
+          История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда 
+        </div>
+        <div class="tags-line">
+          
+          <div class="tag personal">
+            short-read
           </div>
-          <div class="description">
-            История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда 
-          </div>
-          <div class="tags-line">
-            <div class="tag personal">#personal</div>
-            <div class="tag general">#shortread</div>
-            <div class="tag personal">#personal</div>
-            <div class="tag general">#shortread</div>
-            <div class="tag personal">#personal</div>
-            <div class="tag general">#shortread</div>
-          </div>
+          
         </div>
       </div>
-    <!-- </div> -->
+    </a>
+    <script src="scripts.js"></script>
   </body>
 
   <style>
@@ -374,22 +403,32 @@
       border-color: black;
       margin: 0 20px 0 0;
       height: 205px;
+      color:black;
+      text-decoration: none;
+      cursor: pointer;
     }
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    /* классы  box и show для фильтрации по категориям*/
+    .box {
+      display: none;
+    } 
+    .show {
+      display: block;
+    }
+    /*  */
 
     /* придумать как менять класс между шорт/лонг рид */
     .card.short-read {
       width: 460px;
     }
-
     .card.long-read {
       width: 700px;
     }
     /*  */
 
-    .card:hover {
-      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    }
-    
     .container {
       padding: 16px 14px;
       height: 80%;
@@ -413,7 +452,7 @@
       /*  */
     }
 
-    .description {
+    .content {
       font-size: 16px;
       padding: 20px 0 0 0;
 
@@ -437,11 +476,11 @@
     </style>
 </html>
 
+
         </div>
 
     
 </div>
-
 
   </body>
 </html>

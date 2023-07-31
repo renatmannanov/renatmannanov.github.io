@@ -3,19 +3,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='https://fonts.googleapis.com/css?family=IBM Plex Mono' rel='stylesheet'>
     </head>
-
     <body>
         <div class="header">
             <div class="logo">ray mann's story</div>
+            <!-- разделить хидер и панель с кнопками на разные инклуды, чтобы удобно было вставлять на рахные страницы т.к. навигация не везде нужна -->
             <div class="panel">
-                <a class="subject personal" href="#home">personal</a>
-                <a class="subject professional" href="#contact">professional</a>
-                <a class="subject hobby" href="#about">hobby</a>
-                <a class="subject sport" href="#about">sport</a>
-                <a class="subject skills" href="#about">skills</a>
+                <!-- написать, чтобы при клике вешался класс active для постоянного подчеркивания, а при другом клике удалялся -->
+                <!-- а также активировать/деактивировать кнопки, если таких тегов/категорий не существует -->
+                <div class="btn subject all" onclick="filterObjects('all')">all</div>
+                <div class="btn subject personal" onclick="filterObjects('personal')">personal</div>
+                <div class="btn subject professional" onclick="filterObjects('professional')">professional</div>
+                <div class="btn subject hobby" onclick="filterObjects('hobby')">hobby</div>
+                <div class="btn subject sport" onclick="filterObjects('sport')">sport</div>
+                <div class="btn subject skills" onclick="filterObjects('skills')">skills</div>
             </div>
         </div>
     </body>
+    
 
     <style>
         .yearbox {
@@ -29,7 +33,6 @@
 
         .yearline {
         width: 95%;
-
         }
 
         .cardbox {
@@ -56,7 +59,6 @@
         text-align: left;
         padding: 10px 10px 0 10px;
         text-decoration: none;
-        border-radius: 4px;
         }
 
         .header div.panel a {
@@ -64,11 +66,19 @@
         padding: 0 10px 10px 10px;
         }
 
+        .panel {
+        display: inline-flex;
+        padding: 0px 10px 0 10px;
+        }
+
         .subject {
             text-decoration: none;
+            padding: 0 20px 0 0;
+            cursor: pointer;
         }
         .subject:hover {
             text-decoration:underline;
+    
         }
         .subject.active {
             text-decoration:underline;

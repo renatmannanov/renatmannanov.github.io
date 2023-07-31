@@ -18,9 +18,10 @@ title: "raymann's story"
                 <div class=cardbox>
                 {% assign date = currentdate %}
             {% endif %}
-        {% include short-read-card.html title=post.title url=post.url %}
+
+            {% include short-read-card.html title=post.title url=post.url tags=post.tags %}
+
         {% if forloop.last %}</div>{% endif %}
 
     {% endfor %}
 </div>
-
