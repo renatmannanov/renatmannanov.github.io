@@ -20,13 +20,15 @@
                 <!-- написать, чтобы при клике вешался класс active для постоянного подчеркивания, а при другом клике удалялся -->
                 <!-- а также активировать/деактивировать кнопки, если таких тегов/категорий не существует -->
                 <div class="btn subject all" onclick="filterObjects('all')">all</div>
-                <div class="btn subject personal" onclick="filterObjects('personal')">personal</div>
-                <div class="btn subject professional" onclick="filterObjects('professional')">professional</div>
-                <div class="btn subject hobby" onclick="filterObjects('hobby')">hobby</div>
-                <div class="btn subject sport" onclick="filterObjects('sport')">sport</div>
-                <div class="btn subject skills" onclick="filterObjects('skills')">skills</div>
+                
+                <div class="btn subject all personal" onclick="filterObjects('personal')">personal</div>
+                
+                <div class="btn subject all professional" onclick="filterObjects('professional')">professional</div>
+                
+                <div class="btn subject skill" onclick="filterObjects('skill')">skills</div>
             </div>
         </div>
+
     </body>
     
 
@@ -105,7 +107,10 @@
         .sport {
             color: #0FBE16;
         }
-        .skills {
+        .tag.skill {
+            color: #FB8E0F;
+        }
+        .btn.skill {
             color: #FB8E0F;
         }
         
@@ -129,21 +134,24 @@
         
             
                 
+
                 <div class="yearbox" id="y2023">
                 <div class="yeartext">2023</div>
                 <hr class="yearline" />
                 </div>
+                
                 <div class="cardbox">
                 
             
 
+            
             <html lang="en-US">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
   <body>
-    <a class="card box short-read professional" href="/blog/new-post">
+    <a class="card box short-read professional" href="/blog/post-3">
       <div class="container">
         <div class="title">
           Post 3
@@ -151,13 +159,25 @@
         <div class="content">
           История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда 
         </div>
-        <div class="tags-line">
-          
-          <div class="tag personal">
-            short-read
+        
+        <div class="cat-tag-line">
+          <div class="categories-line">
+            
+            <div class="categories professional">
+              #professional
+            </div>
+            
           </div>
-          
+
+          <div class="tags-line">
+            
+            <div class="tag short-read">
+              #short-read
+            </div>
+            
+          </div>
         </div>
+
       </div>
     </a>
     <script src="scripts.js"></script>
@@ -230,18 +250,28 @@
       /*  */
     }
 
-    .tags-line {
+    .cat-tag-line {
       display: inline-flex;
       position: absolute;
       bottom: 0;
     }
+    
+    .category-line {
+      display: inline-flex;
+    }
+
+    .tags-line {
+      display: inline-flex;
+    }
 
     .tag {
-      padding: 0 16px 0 0;
+      padding: 0 0 0 16px;
+      color: grey;
     }
     </style>
 </html>
 
+            
 
         
 
@@ -250,13 +280,14 @@
         
             
 
+            
             <html lang="en-US">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
   <body>
-    <a class="card box long-read personal" href="/blog/new-post-layout">
+    <a class="card box skill personal" href="/blog/post-1">
       <div class="container">
         <div class="title">
           Post 1
@@ -264,13 +295,25 @@
         <div class="content">
           История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда 
         </div>
-        <div class="tags-line">
-          
-          <div class="tag personal">
-            long-read
+
+        <div class="cat-tag-line">
+          <div class="categories-line">
+            
+            <div class="categories personal">
+              #personal
+            </div>
+            
           </div>
-          
+
+          <div class="tags-line">
+            
+            <div class="tag skill">
+              #skill
+            </div>
+            
+          </div>
         </div>
+
       </div>
     </a>
     <script src="scripts.js"></script>
@@ -300,11 +343,8 @@
     /*  */
 
     /* придумать как менять класс между шорт/лонг рид */
-    .card.short-read {
-      width: 460px;
-    }
-    .card.long-read {
-      width: 700px;
+    .card.skill {
+      max-width: 219px !important;
     }
     /*  */
 
@@ -343,18 +383,28 @@
       /*  */
     }
 
-    .tags-line {
+    .cat-tag-line {
       display: inline-flex;
       position: absolute;
       bottom: 0;
     }
+    
+    .category-line {
+      display: inline-flex;
+    }
+
+    .tags-line {
+      display: inline-flex;
+    }
 
     .tag {
-      padding: 0 16px 0 0;
+      padding: 0 0 0 16px;
+      color: grey;
     }
     </style>
 </html>
 
+            
 
         
 
@@ -363,21 +413,24 @@
         
             
                 </div>
+
                 <div class="yearbox" id="y2022">
                 <div class="yeartext">2022</div>
                 <hr class="yearline" />
                 </div>
+                
                 <div class="cardbox">
                 
             
 
+            
             <html lang="en-US">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
   <body>
-    <a class="card box short-read personal" href="/blog/new">
+    <a class="card box skill personal" href="/blog/post-2">
       <div class="container">
         <div class="title">
           Post 2
@@ -385,13 +438,25 @@
         <div class="content">
           История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда             История о том, как меня спросили дорогу, а я отправил их не туда 
         </div>
-        <div class="tags-line">
-          
-          <div class="tag personal">
-            short-read
+
+        <div class="cat-tag-line">
+          <div class="categories-line">
+            
+            <div class="categories personal">
+              #personal
+            </div>
+            
           </div>
-          
+
+          <div class="tags-line">
+            
+            <div class="tag skill">
+              #skill
+            </div>
+            
+          </div>
         </div>
+
       </div>
     </a>
     <script src="scripts.js"></script>
@@ -421,11 +486,8 @@
     /*  */
 
     /* придумать как менять класс между шорт/лонг рид */
-    .card.short-read {
-      width: 460px;
-    }
-    .card.long-read {
-      width: 700px;
+    .card.skill {
+      max-width: 219px !important;
     }
     /*  */
 
@@ -464,18 +526,28 @@
       /*  */
     }
 
-    .tags-line {
+    .cat-tag-line {
       display: inline-flex;
       position: absolute;
       bottom: 0;
     }
+    
+    .category-line {
+      display: inline-flex;
+    }
+
+    .tags-line {
+      display: inline-flex;
+    }
 
     .tag {
-      padding: 0 16px 0 0;
+      padding: 0 0 0 16px;
+      color: grey;
     }
     </style>
 </html>
 
+            
 
         </div>
 

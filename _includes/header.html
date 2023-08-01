@@ -11,13 +11,13 @@
                 <!-- написать, чтобы при клике вешался класс active для постоянного подчеркивания, а при другом клике удалялся -->
                 <!-- а также активировать/деактивировать кнопки, если таких тегов/категорий не существует -->
                 <div class="btn subject all" onclick="filterObjects('all')">all</div>
-                <div class="btn subject personal" onclick="filterObjects('personal')">personal</div>
-                <div class="btn subject professional" onclick="filterObjects('professional')">professional</div>
-                <div class="btn subject hobby" onclick="filterObjects('hobby')">hobby</div>
-                <div class="btn subject sport" onclick="filterObjects('sport')">sport</div>
-                <div class="btn subject skills" onclick="filterObjects('skills')">skills</div>
+                {% for cat in site.categories %}
+                <div class="btn subject all {{cat | first }}" onclick="filterObjects('{{cat | first }}')">{{cat | first }}</div>
+                {% endfor %}
+                <div class="btn subject skill" onclick="filterObjects('skill')">skills</div>
             </div>
         </div>
+
     </body>
     
 
@@ -96,7 +96,10 @@
         .sport {
             color: #0FBE16;
         }
-        .skills {
+        .tag.skill {
+            color: #FB8E0F;
+        }
+        .btn.skill {
             color: #FB8E0F;
         }
         
