@@ -10,6 +10,14 @@ body {
   margin: 0;
 }
 
+.header {
+  overflow: hidden;
+  background-color: #ffff;
+  padding: 20px;
+  line-height: 24px;
+  font-size: 24px;
+  color: black;
+}
 
 // общие цвета для категорий и тегов
 // настройки расположения
@@ -55,7 +63,7 @@ body {
   font-size: 24px;
   line-height: 24px;
   display: inline-flex;
-  width: 100%;
+  width: 95%;
 }
 
 .yearline {
@@ -63,8 +71,9 @@ body {
 }
 
 .cardbox {
-  margin: 30px;
-  display: inline-flex;
+  margin: 10px 30px 30px 30px;
+  display: flex;
+  flex-wrap: wrap;
 }
 //
 

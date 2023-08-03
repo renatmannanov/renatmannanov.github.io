@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <title>raymann's story - </title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-  </head>
-  <body>
-    <html>
+<div class="header">
+<html>
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -16,37 +8,11 @@
 </head>
 
 <body>
-    <div class="header">
-        <div class="logo">ray mann's story</div>
-        <!-- разделить хидер и панель с кнопками на разные инклуды, чтобы удобно было вставлять на рахные страницы т.к. навигация не везде нужна -->
-        <div class="panel">
-            <!-- написать, чтобы при клике вешался класс active для постоянного подчеркивания, а при другом клике удалялся -->
-            <!-- а также активировать/деактивировать кнопки, если таких тегов/категорий не существует -->
-            <div class="btn subject all" onclick="filterObjects('all')">all</div>
-            
-            <div class="btn subject all personal" onclick="filterObjects('personal')">personal
-            </div>
-            
-            <div class="btn subject all professional" onclick="filterObjects('professional')">professional
-            </div>
-            
-            <div class="btn subject skill" onclick="filterObjects('skill')">skills</div>
-        </div>
-    </div>
-
+    <div class="logo">ray mann's story</div>
 </body>
 
-
 <style>
-    .header {
-        overflow: hidden;
-        background-color: #ffff;
-        padding: 20px;
-        line-height: 24px;
-        font-size: 24px;
-        /* font-weight: bold */
-        color: black;
-    }
+
 
     div.logo {
         text-align: left;
@@ -93,8 +59,52 @@
         }
     }
 </style>
-
 </html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <div class="panel">
+        <!-- написать, чтобы при клике вешался класс active для постоянного подчеркивания, а при другом клике удалялся -->
+        <!-- а также активировать/деактивировать кнопки, если таких тегов/категорий не существует -->
+        <div class="btn subject all" onclick="filterObjects('all')">all</div>
+        
+        <div class="btn subject all personal" onclick="filterObjects('personal')">personal
+        </div>
+        
+        <div class="btn subject all professional" onclick="filterObjects('professional')">professional
+        </div>
+        
+        <div class="btn subject skill" onclick="filterObjects('skill')">skills</div>
+    </div>
+</body>
+
+<style>
+    .panel {
+        display: inline-flex;
+        padding: 0px 10px 0 10px;
+    }
+
+    .subject {
+        text-decoration: none;
+        padding: 0 20px 0 0;
+        cursor: pointer;
+    }
+
+    .subject:hover {
+        text-decoration: underline;
+
+    }
+
+    .subject.active {
+        text-decoration: underline;
+    }
+</style>
+</html>
+</div>
 
 <div>
     
@@ -112,7 +122,6 @@
                 
             
 
-            
             <html lang="en-US">
 
 <head>
@@ -120,15 +129,159 @@
 </head>
 
 <body>
-  <a class="card box short-read professional" href="/blog/post-3">
+  <a class="card box skill personal" href="/blog/post-9">
+    <div class="container">
+      <div class="title">
+        Post 1
+      </div>
+      <div class="content">
+        <p>What is Lorem Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+<p>Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+
+<p>Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of “de Finibus Bonorum et Malorum” (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, “Lorem ipsum dolor sit amet..”, comes from a line in section 1.10.32.</p>
+
+<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from “de Finibus Bonorum et Malorum” by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+
+<p>Where can I get some?
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+
+      </div>
+
+      <div class="cat-tag-line">
+        <div class="categories-line">
+          
+          <div class="categories personal">
+            #personal
+          </div>
+          
+        </div>
+
+        <div class="tags-line">
+          
+          <div class="tag skill">
+            #skill
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+  </a>
+  <script src="scripts.js"></script>
+</body>
+
+<style>
+  .card {
+    border: 1px solid;
+    border-color: black;
+    margin: 20px 20px 0 0;
+    height: 205px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  /* классы  box и show для фильтрации по категориям*/
+  .box {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+  /*  */
+
+  /* придумать как менять класс между шорт/лонг рид */
+  .card.short-read {
+    width: 460px;
+  }
+
+  .card.long-read {
+    width: 700px;
+  }
+
+  .card.skill {
+    max-width: 219px !important;
+  }
+
+  /*  */
+
+  .container {
+    padding: 16px 14px;
+    height: 80%;
+    position: relative;
+
+    /* временно пока не придумаю как адекватно скрыть/ограничить/растягивать теги */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*  */
+  }
+
+  .title {
+    /* таким образом обезаю заголовок/описание, чтобы не вылезало за края, мб потом ограничивать количестком символов */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    /*  */
+  }
+
+  .content {
+    /* padding: 20px 0 0 0; */
+
+    /* таким образом обезаю заголовок/описание, чтобы не вылезало за края, мб потом ограничивать количестком символов */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    /*  */
+  }
+</style>
+
+</html>
+
+        
+
+    
+
+        
+            
+
+            <html lang="en-US">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <a class="card box short-read professional" href="/blog/post-6">
     <div class="container">
       <div class="title">
         Post 3
       </div>
       <div class="content">
-        История о том, как меня спросили дорогу, а я отправил их не туда История о том, как меня спросили дорогу, а я
-        отправил их не туда История о том, как меня спросили дорогу, а я отправил их не туда История о том, как меня
-        спросили дорогу, а я отправил их не туда
+        <p>What is Lorem Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+<p>Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+
+<p>Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of “de Finibus Bonorum et Malorum” (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, “Lorem ipsum dolor sit amet..”, comes from a line in section 1.10.32.</p>
+
+<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from “de Finibus Bonorum et Malorum” by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+
+<p>Where can I get some?
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+
       </div>
 
       <div class="cat-tag-line">
@@ -158,7 +311,7 @@
   .card {
     border: 1px solid;
     border-color: black;
-    margin: 0 20px 0 0;
+    margin: 20px 20px 0 0;
     height: 205px;
     color: black;
     text-decoration: none;
@@ -177,7 +330,6 @@
   .show {
     display: block;
   }
-
   /*  */
 
   /* придумать как менять класс между шорт/лонг рид */
@@ -216,7 +368,7 @@
   }
 
   .content {
-    padding: 20px 0 0 0;
+    /* padding: 20px 0 0 0; */
 
     /* таким образом обезаю заголовок/описание, чтобы не вылезало за края, мб потом ограничивать количестком символов */
     overflow: hidden;
@@ -228,7 +380,6 @@
 </style>
 
 </html>
-            
 
         
 
@@ -237,7 +388,6 @@
         
             
 
-            
             <html lang="en-US">
 
 <head>
@@ -245,15 +395,425 @@
 </head>
 
 <body>
-  <a class="card box skill personal" href="/blog/post-1">
+  <a class="card box long-read personal" href="/blog/post-5">
     <div class="container">
       <div class="title">
         Post 1
       </div>
       <div class="content">
-        История о том, как меня спросили дорогу, а я отправил их не туда История о том, как меня спросили дорогу, а я
-        отправил их не туда История о том, как меня спросили дорогу, а я отправил их не туда История о том, как меня
-        спросили дорогу, а я отправил их не туда
+        <p>What is Lorem Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+<p>Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+
+<p>Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of “de Finibus Bonorum et Malorum” (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, “Lorem ipsum dolor sit amet..”, comes from a line in section 1.10.32.</p>
+
+<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from “de Finibus Bonorum et Malorum” by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+
+<p>Where can I get some?
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+
+      </div>
+
+      <div class="cat-tag-line">
+        <div class="categories-line">
+          
+          <div class="categories personal">
+            #personal
+          </div>
+          
+        </div>
+
+        <div class="tags-line">
+          
+          <div class="tag long-read">
+            #long-read
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+  </a>
+  <script src="scripts.js"></script>
+</body>
+
+<style>
+  .card {
+    border: 1px solid;
+    border-color: black;
+    margin: 20px 20px 0 0;
+    height: 205px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  /* классы  box и show для фильтрации по категориям*/
+  .box {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+  /*  */
+
+  /* придумать как менять класс между шорт/лонг рид */
+  .card.short-read {
+    width: 460px;
+  }
+
+  .card.long-read {
+    width: 700px;
+  }
+
+  .card.skill {
+    max-width: 219px !important;
+  }
+
+  /*  */
+
+  .container {
+    padding: 16px 14px;
+    height: 80%;
+    position: relative;
+
+    /* временно пока не придумаю как адекватно скрыть/ограничить/растягивать теги */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*  */
+  }
+
+  .title {
+    /* таким образом обезаю заголовок/описание, чтобы не вылезало за края, мб потом ограничивать количестком символов */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    /*  */
+  }
+
+  .content {
+    /* padding: 20px 0 0 0; */
+
+    /* таким образом обезаю заголовок/описание, чтобы не вылезало за края, мб потом ограничивать количестком символов */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    /*  */
+  }
+</style>
+
+</html>
+
+        
+
+    
+
+        
+            
+
+            <html lang="en-US">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <a class="card box short-read professional" href="/blog/post-3">
+    <div class="container">
+      <div class="title">
+        Post 3
+      </div>
+      <div class="content">
+        <p>What is Lorem Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+<p>Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+
+<p>Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of “de Finibus Bonorum et Malorum” (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, “Lorem ipsum dolor sit amet..”, comes from a line in section 1.10.32.</p>
+
+<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from “de Finibus Bonorum et Malorum” by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+
+<p>Where can I get some?
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+
+      </div>
+
+      <div class="cat-tag-line">
+        <div class="categories-line">
+          
+          <div class="categories professional">
+            #professional
+          </div>
+          
+        </div>
+
+        <div class="tags-line">
+          
+          <div class="tag short-read">
+            #short-read
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+  </a>
+  <script src="scripts.js"></script>
+</body>
+
+<style>
+  .card {
+    border: 1px solid;
+    border-color: black;
+    margin: 20px 20px 0 0;
+    height: 205px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  /* классы  box и show для фильтрации по категориям*/
+  .box {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+  /*  */
+
+  /* придумать как менять класс между шорт/лонг рид */
+  .card.short-read {
+    width: 460px;
+  }
+
+  .card.long-read {
+    width: 700px;
+  }
+
+  .card.skill {
+    max-width: 219px !important;
+  }
+
+  /*  */
+
+  .container {
+    padding: 16px 14px;
+    height: 80%;
+    position: relative;
+
+    /* временно пока не придумаю как адекватно скрыть/ограничить/растягивать теги */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*  */
+  }
+
+  .title {
+    /* таким образом обезаю заголовок/описание, чтобы не вылезало за края, мб потом ограничивать количестком символов */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    /*  */
+  }
+
+  .content {
+    /* padding: 20px 0 0 0; */
+
+    /* таким образом обезаю заголовок/описание, чтобы не вылезало за края, мб потом ограничивать количестком символов */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    /*  */
+  }
+</style>
+
+</html>
+
+        
+
+    
+
+        
+            
+
+            <html lang="en-US">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <a class="card box short-read professional" href="/blog/post-12">
+    <div class="container">
+      <div class="title">
+        Post 3
+      </div>
+      <div class="content">
+        <p>What is Lorem Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+<p>Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+
+<p>Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of “de Finibus Bonorum et Malorum” (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, “Lorem ipsum dolor sit amet..”, comes from a line in section 1.10.32.</p>
+
+<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from “de Finibus Bonorum et Malorum” by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+
+<p>Where can I get some?
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+
+      </div>
+
+      <div class="cat-tag-line">
+        <div class="categories-line">
+          
+          <div class="categories professional">
+            #professional
+          </div>
+          
+        </div>
+
+        <div class="tags-line">
+          
+          <div class="tag short-read">
+            #short-read
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+  </a>
+  <script src="scripts.js"></script>
+</body>
+
+<style>
+  .card {
+    border: 1px solid;
+    border-color: black;
+    margin: 20px 20px 0 0;
+    height: 205px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  /* классы  box и show для фильтрации по категориям*/
+  .box {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+  /*  */
+
+  /* придумать как менять класс между шорт/лонг рид */
+  .card.short-read {
+    width: 460px;
+  }
+
+  .card.long-read {
+    width: 700px;
+  }
+
+  .card.skill {
+    max-width: 219px !important;
+  }
+
+  /*  */
+
+  .container {
+    padding: 16px 14px;
+    height: 80%;
+    position: relative;
+
+    /* временно пока не придумаю как адекватно скрыть/ограничить/растягивать теги */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*  */
+  }
+
+  .title {
+    /* таким образом обезаю заголовок/описание, чтобы не вылезало за края, мб потом ограничивать количестком символов */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    /*  */
+  }
+
+  .content {
+    /* padding: 20px 0 0 0; */
+
+    /* таким образом обезаю заголовок/описание, чтобы не вылезало за края, мб потом ограничивать количестком символов */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    /*  */
+  }
+</style>
+
+</html>
+
+        
+
+    
+
+        
+            
+
+            <html lang="en-US">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <a class="card box skill personal" href="/blog/post-11">
+    <div class="container">
+      <div class="title">
+        Post 1
+      </div>
+      <div class="content">
+        <p>What is Lorem Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+<p>Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+
+<p>Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of “de Finibus Bonorum et Malorum” (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, “Lorem ipsum dolor sit amet..”, comes from a line in section 1.10.32.</p>
+
+<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from “de Finibus Bonorum et Malorum” by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+
+<p>Where can I get some?
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+
       </div>
 
       <div class="cat-tag-line">
@@ -283,7 +843,7 @@
   .card {
     border: 1px solid;
     border-color: black;
-    margin: 0 20px 0 0;
+    margin: 20px 20px 0 0;
     height: 205px;
     color: black;
     text-decoration: none;
@@ -302,7 +862,6 @@
   .show {
     display: block;
   }
-
   /*  */
 
   /* придумать как менять класс между шорт/лонг рид */
@@ -341,7 +900,7 @@
   }
 
   .content {
-    padding: 20px 0 0 0;
+    /* padding: 20px 0 0 0; */
 
     /* таким образом обезаю заголовок/описание, чтобы не вылезало за края, мб потом ограничивать количестком символов */
     overflow: hidden;
@@ -353,7 +912,272 @@
 </style>
 
 </html>
+
+        
+
+    
+
+        
             
+
+            <html lang="en-US">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <a class="card box short-read professional" href="/blog/post-10">
+    <div class="container">
+      <div class="title">
+        Post 3
+      </div>
+      <div class="content">
+        <p>What is Lorem Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+<p>Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+
+<p>Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of “de Finibus Bonorum et Malorum” (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, “Lorem ipsum dolor sit amet..”, comes from a line in section 1.10.32.</p>
+
+<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from “de Finibus Bonorum et Malorum” by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+
+<p>Where can I get some?
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+
+      </div>
+
+      <div class="cat-tag-line">
+        <div class="categories-line">
+          
+          <div class="categories professional">
+            #professional
+          </div>
+          
+        </div>
+
+        <div class="tags-line">
+          
+          <div class="tag short-read">
+            #short-read
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+  </a>
+  <script src="scripts.js"></script>
+</body>
+
+<style>
+  .card {
+    border: 1px solid;
+    border-color: black;
+    margin: 20px 20px 0 0;
+    height: 205px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  /* классы  box и show для фильтрации по категориям*/
+  .box {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+  /*  */
+
+  /* придумать как менять класс между шорт/лонг рид */
+  .card.short-read {
+    width: 460px;
+  }
+
+  .card.long-read {
+    width: 700px;
+  }
+
+  .card.skill {
+    max-width: 219px !important;
+  }
+
+  /*  */
+
+  .container {
+    padding: 16px 14px;
+    height: 80%;
+    position: relative;
+
+    /* временно пока не придумаю как адекватно скрыть/ограничить/растягивать теги */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*  */
+  }
+
+  .title {
+    /* таким образом обезаю заголовок/описание, чтобы не вылезало за края, мб потом ограничивать количестком символов */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    /*  */
+  }
+
+  .content {
+    /* padding: 20px 0 0 0; */
+
+    /* таким образом обезаю заголовок/описание, чтобы не вылезало за края, мб потом ограничивать количестком символов */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    /*  */
+  }
+</style>
+
+</html>
+
+        
+
+    
+
+        
+            
+
+            <html lang="en-US">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <a class="card box skill personal" href="/blog/post-1">
+    <div class="container">
+      <div class="title">
+        Post 1
+      </div>
+      <div class="content">
+        <p>What is Lorem Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+<p>Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+
+<p>Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of “de Finibus Bonorum et Malorum” (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, “Lorem ipsum dolor sit amet..”, comes from a line in section 1.10.32.</p>
+
+<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from “de Finibus Bonorum et Malorum” by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+
+<p>Where can I get some?
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+
+      </div>
+
+      <div class="cat-tag-line">
+        <div class="categories-line">
+          
+          <div class="categories personal">
+            #personal
+          </div>
+          
+        </div>
+
+        <div class="tags-line">
+          
+          <div class="tag skill">
+            #skill
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+  </a>
+  <script src="scripts.js"></script>
+</body>
+
+<style>
+  .card {
+    border: 1px solid;
+    border-color: black;
+    margin: 20px 20px 0 0;
+    height: 205px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  /* классы  box и show для фильтрации по категориям*/
+  .box {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+  /*  */
+
+  /* придумать как менять класс между шорт/лонг рид */
+  .card.short-read {
+    width: 460px;
+  }
+
+  .card.long-read {
+    width: 700px;
+  }
+
+  .card.skill {
+    max-width: 219px !important;
+  }
+
+  /*  */
+
+  .container {
+    padding: 16px 14px;
+    height: 80%;
+    position: relative;
+
+    /* временно пока не придумаю как адекватно скрыть/ограничить/растягивать теги */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*  */
+  }
+
+  .title {
+    /* таким образом обезаю заголовок/описание, чтобы не вылезало за края, мб потом ограничивать количестком символов */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    /*  */
+  }
+
+  .content {
+    /* padding: 20px 0 0 0; */
+
+    /* таким образом обезаю заголовок/описание, чтобы не вылезало за края, мб потом ограничивать количестком символов */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    /*  */
+  }
+</style>
+
+</html>
 
         
 
@@ -372,7 +1196,6 @@
                 
             
 
-            
             <html lang="en-US">
 
 <head>
@@ -380,15 +1203,26 @@
 </head>
 
 <body>
-  <a class="card box skill personal" href="/blog/post-2">
+  <a class="card box skill personal" href="/blog/post-8">
     <div class="container">
       <div class="title">
         Post 2
       </div>
       <div class="content">
-        История о том, как меня спросили дорогу, а я отправил их не туда История о том, как меня спросили дорогу, а я
-        отправил их не туда История о том, как меня спросили дорогу, а я отправил их не туда История о том, как меня
-        спросили дорогу, а я отправил их не туда
+        <p>What is Lorem Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+<p>Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+
+<p>Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of “de Finibus Bonorum et Malorum” (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, “Lorem ipsum dolor sit amet..”, comes from a line in section 1.10.32.</p>
+
+<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from “de Finibus Bonorum et Malorum” by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+
+<p>Where can I get some?
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.a</p>
+
       </div>
 
       <div class="cat-tag-line">
@@ -418,7 +1252,7 @@
   .card {
     border: 1px solid;
     border-color: black;
-    margin: 0 20px 0 0;
+    margin: 20px 20px 0 0;
     height: 205px;
     color: black;
     text-decoration: none;
@@ -437,7 +1271,6 @@
   .show {
     display: block;
   }
-
   /*  */
 
   /* придумать как менять класс между шорт/лонг рид */
@@ -476,7 +1309,7 @@
   }
 
   .content {
-    padding: 20px 0 0 0;
+    /* padding: 20px 0 0 0; */
 
     /* таким образом обезаю заголовок/описание, чтобы не вылезало за края, мб потом ограничивать количестком символов */
     overflow: hidden;
@@ -488,12 +1321,407 @@
 </style>
 
 </html>
+
+        
+
+    
+
+        
             
+
+            <html lang="en-US">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <a class="card box skill personal" href="/blog/post-7">
+    <div class="container">
+      <div class="title">
+        Post 2
+      </div>
+      <div class="content">
+        <p>What is Lorem Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+<p>Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+
+<p>Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of “de Finibus Bonorum et Malorum” (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, “Lorem ipsum dolor sit amet..”, comes from a line in section 1.10.32.</p>
+
+<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from “de Finibus Bonorum et Malorum” by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+
+<p>Where can I get some?
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.a</p>
+
+      </div>
+
+      <div class="cat-tag-line">
+        <div class="categories-line">
+          
+          <div class="categories personal">
+            #personal
+          </div>
+          
+        </div>
+
+        <div class="tags-line">
+          
+          <div class="tag skill">
+            #skill
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+  </a>
+  <script src="scripts.js"></script>
+</body>
+
+<style>
+  .card {
+    border: 1px solid;
+    border-color: black;
+    margin: 20px 20px 0 0;
+    height: 205px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  /* классы  box и show для фильтрации по категориям*/
+  .box {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+  /*  */
+
+  /* придумать как менять класс между шорт/лонг рид */
+  .card.short-read {
+    width: 460px;
+  }
+
+  .card.long-read {
+    width: 700px;
+  }
+
+  .card.skill {
+    max-width: 219px !important;
+  }
+
+  /*  */
+
+  .container {
+    padding: 16px 14px;
+    height: 80%;
+    position: relative;
+
+    /* временно пока не придумаю как адекватно скрыть/ограничить/растягивать теги */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*  */
+  }
+
+  .title {
+    /* таким образом обезаю заголовок/описание, чтобы не вылезало за края, мб потом ограничивать количестком символов */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    /*  */
+  }
+
+  .content {
+    /* padding: 20px 0 0 0; */
+
+    /* таким образом обезаю заголовок/описание, чтобы не вылезало за края, мб потом ограничивать количестком символов */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    /*  */
+  }
+</style>
+
+</html>
+
+        
+
+    
+
+        
+            
+
+            <html lang="en-US">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <a class="card box skill personal" href="/blog/post-4">
+    <div class="container">
+      <div class="title">
+        Post 2
+      </div>
+      <div class="content">
+        <p>What is Lorem Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+<p>Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+
+<p>Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of “de Finibus Bonorum et Malorum” (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, “Lorem ipsum dolor sit amet..”, comes from a line in section 1.10.32.</p>
+
+<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from “de Finibus Bonorum et Malorum” by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+
+<p>Where can I get some?
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.a</p>
+
+      </div>
+
+      <div class="cat-tag-line">
+        <div class="categories-line">
+          
+          <div class="categories personal">
+            #personal
+          </div>
+          
+        </div>
+
+        <div class="tags-line">
+          
+          <div class="tag skill">
+            #skill
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+  </a>
+  <script src="scripts.js"></script>
+</body>
+
+<style>
+  .card {
+    border: 1px solid;
+    border-color: black;
+    margin: 20px 20px 0 0;
+    height: 205px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  /* классы  box и show для фильтрации по категориям*/
+  .box {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+  /*  */
+
+  /* придумать как менять класс между шорт/лонг рид */
+  .card.short-read {
+    width: 460px;
+  }
+
+  .card.long-read {
+    width: 700px;
+  }
+
+  .card.skill {
+    max-width: 219px !important;
+  }
+
+  /*  */
+
+  .container {
+    padding: 16px 14px;
+    height: 80%;
+    position: relative;
+
+    /* временно пока не придумаю как адекватно скрыть/ограничить/растягивать теги */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*  */
+  }
+
+  .title {
+    /* таким образом обезаю заголовок/описание, чтобы не вылезало за края, мб потом ограничивать количестком символов */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    /*  */
+  }
+
+  .content {
+    /* padding: 20px 0 0 0; */
+
+    /* таким образом обезаю заголовок/описание, чтобы не вылезало за края, мб потом ограничивать количестком символов */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    /*  */
+  }
+</style>
+
+</html>
+
+        
+
+    
+
+        
+            
+
+            <html lang="en-US">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <a class="card box skill personal" href="/blog/post-2">
+    <div class="container">
+      <div class="title">
+        Post 2
+      </div>
+      <div class="content">
+        <p>What is Lorem Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+<p>Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+
+<p>Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of “de Finibus Bonorum et Malorum” (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, “Lorem ipsum dolor sit amet..”, comes from a line in section 1.10.32.</p>
+
+<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from “de Finibus Bonorum et Malorum” by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+
+<p>Where can I get some?
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.a</p>
+
+      </div>
+
+      <div class="cat-tag-line">
+        <div class="categories-line">
+          
+          <div class="categories personal">
+            #personal
+          </div>
+          
+        </div>
+
+        <div class="tags-line">
+          
+          <div class="tag skill">
+            #skill
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+  </a>
+  <script src="scripts.js"></script>
+</body>
+
+<style>
+  .card {
+    border: 1px solid;
+    border-color: black;
+    margin: 20px 20px 0 0;
+    height: 205px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  /* классы  box и show для фильтрации по категориям*/
+  .box {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+  /*  */
+
+  /* придумать как менять класс между шорт/лонг рид */
+  .card.short-read {
+    width: 460px;
+  }
+
+  .card.long-read {
+    width: 700px;
+  }
+
+  .card.skill {
+    max-width: 219px !important;
+  }
+
+  /*  */
+
+  .container {
+    padding: 16px 14px;
+    height: 80%;
+    position: relative;
+
+    /* временно пока не придумаю как адекватно скрыть/ограничить/растягивать теги */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*  */
+  }
+
+  .title {
+    /* таким образом обезаю заголовок/описание, чтобы не вылезало за края, мб потом ограничивать количестком символов */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    /*  */
+  }
+
+  .content {
+    /* padding: 20px 0 0 0; */
+
+    /* таким образом обезаю заголовок/описание, чтобы не вылезало за края, мб потом ограничивать количестком символов */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    /*  */
+  }
+</style>
+
+</html>
 
         </div>
 
     
 </div>
-
-  </body>
-</html>

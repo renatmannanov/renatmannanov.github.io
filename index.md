@@ -1,9 +1,12 @@
 ---
-layout: default
+# layout: default
 title: "raymann's story"
 ---
 
-{% include header.html %}
+<div class="header">
+{% include header-logo.html %}
+{% include header-panel.html %}
+</div>
 
 <div>
     {% for post in site.posts %}
@@ -21,11 +24,7 @@ title: "raymann's story"
                 {% assign date = currentdate %}
             {% endif %}
 
-            {% if post.tags %}
-            {% include cards.html title=post.title url=post.url tags=post.tags %}
-            {% else %}
-            "no more posts"
-            {% endif %}
+            {% include post-cards.html title=post.title url=post.url tags=post.tags %}
 
         {% if forloop.last %}</div>{% endif %}
 

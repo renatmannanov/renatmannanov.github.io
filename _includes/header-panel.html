@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="panel">
+        <!-- написать, чтобы при клике вешался класс active для постоянного подчеркивания, а при другом клике удалялся -->
+        <!-- а также активировать/деактивировать кнопки, если таких тегов/категорий не существует -->
+        <div class="btn subject all" onclick="filterObjects('all')">all</div>
+        {% for cat in site.categories %}
+        <div class="btn subject all {{cat | first }}" onclick="filterObjects('{{cat | first }}')">{{cat | first }}
+        </div>
+        {% endfor %}
+        <div class="btn subject skill" onclick="filterObjects('skill')">skills</div>
+    </div>
+</body>
+
+<style>
+    .panel {
+        display: inline-flex;
+        padding: 0px 10px 0 10px;
+    }
+
+    .subject {
+        text-decoration: none;
+        padding: 0 20px 0 0;
+        cursor: pointer;
+    }
+
+    .subject:hover {
+        text-decoration: underline;
+
+    }
+
+    .subject.active {
+        text-decoration: underline;
+    }
+</style>
+</html>

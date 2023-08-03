@@ -1,0 +1,54 @@
+<html lang="{{ site.lang | default: 'en-US' }}">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=IBM Plex Mono' rel='stylesheet'>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+  <div class="greatings">
+    <p>Привет! Меня зовут Ренат Маннанов, я IT разнорабочий ;)</p>
+    <p>Тут ты найдешь мой блог и как можно со мной поработать. </p>
+    <p>А немного позже добавлю профессиональный трек и навыки</p>
+  </div> 
+
+  <div class="info-cards">
+
+    <div class="main-info-cards">
+      <div class="blog-card">
+        {% include info-cards.html title="blog" description="dfdfgdfg" %}
+      </div>
+      <div class="contribution-card">
+        {% include info-cards.html title="contribution" description="bdfbdfbdfb" %}
+      </div>
+    </div>
+
+    <div class="secondary-info-cards">
+      <div class="skills-card">
+        {% include info-cards.html title="skills" description="dfbdfbdfbdfb" %}
+      </div>
+      <div class="track-card">
+        {% include info-cards.html title="track" description="dfbdfbdfbf" %}
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
+
+<style>
+  .greatings {
+    margin: 30px;
+  }
+
+  .info-cards {
+    margin: 30px;
+    display: grid;
+  }
+
+  .main-info-cards, .secondary-info-cards {
+    display: inline-flex;
+  }
+</style>  
