@@ -1,0 +1,79 @@
+$backgroundColor: #ffffff;
+$bodyColor: #000000;
+$bodyFont: 'IBM Plex Mono';
+
+body {
+  background: $backgroundColor;
+  color: $bodyColor;
+  font-family: $bodyFont;
+  
+  margin: 0;
+}
+
+
+// общие цвета для категорий и тегов
+// настройки расположения
+.cat-tag-line {
+  display: inline-flex;
+  position: absolute;
+  bottom: 0;
+}
+
+.tags-line {
+  display: inline-flex;
+}
+
+.tag {
+  padding: 0 0 0 16px;
+  color: grey;
+}
+// цвета
+.personal {
+  color: #F515EC;
+}
+.professional {
+  color: #FA0808;
+}
+.hobby {
+  color: #2F14D7;
+}
+.sport {
+  color: #0FBE16;
+}
+.tag.skill {
+  color: #FB8E0F;
+}
+.btn.skill {
+  color: #FB8E0F;
+}
+// 
+
+// стили для index.html
+.yearbox {
+  padding: 30px;
+  margin: 0 30px 0 0;
+  font-size: 24px;
+  line-height: 24px;
+  display: inline-flex;
+  width: 100%;
+}
+
+.yearline {
+  width: 95%;
+}
+
+.cardbox {
+  margin: 30px;
+  display: inline-flex;
+}
+//
+
+// обшие стили для текста
+.title {
+  font-size: 24px;
+  line-height: 24px;
+}
+.content {
+  font-size: 16px;
+}
+// 

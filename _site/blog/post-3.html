@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=IBM Plex Mono' rel='stylesheet'>
-  </head>
 
-  <body>
-    <div class="frame">
-      <div class="title">
-        Post 3
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=IBM Plex Mono' rel='stylesheet'>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+  <div class="frame">
+    <div class="title">
+      Post 3
+    </div>
+
+    <div class="cat-tag-line">
+      <div class="categories-line">
+        
+        <div class="categories professional">
+          #professional
+        </div>
+        
       </div>
 
-      <div class="cat-tag-line">
-        <div class="categories-line">
-          
-          <div class="categories professional">
-            #professional
-          </div>
-          
+      <div class="tags-line">
+        
+        <div class="tag short-read">
+          #short-read
         </div>
-
-        <div class="tags-line">
-          
-          <div class="tag short-read">
-            #short-read
-          </div>
-          
-        </div>
+        
       </div>
+    </div>
 
-      <div class="content">
-        <p>What is Lorem Ipsum?
+    <div class="content">
+      <p>What is Lorem Ipsum?
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
 <p>Why do we use it?
@@ -44,22 +46,23 @@ Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots 
 <p>Where can I get some?
 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
 
-      </div>
     </div>
+  </div>
 
-    <!-- придумал как связать скилы и посты -->
-    <!-- 
+  <!-- придумал как связать скилы и посты -->
+  <!-- 
     <a href="/blog/post-1">post-1</a>
      -->
 
-  </body>
+</body>
+
 </html>
 
 <style>
   html body {
     height: 93vh;
-    font-family: 'IBM Plex Mono';
   }
+
   .frame {
     border: 1px solid;
     border-color: black;
@@ -68,44 +71,4 @@ There are many variations of passages of Lorem Ipsum available, but the majority
     margin: 30px 0 30px 22px;
     padding: 16px 14px;
   }
-
-  /* объединить в мейн.ксс со стилями их шорт-рид */
-  .title {
-    font-size: 24px;
-    line-height: 24px;
-  }
-
-  .content {
-    font-size: 16px;
-  }
-
-  .cat-tag-line {
-    display: inline-flex;
-  }
-
-  .tags-line {
-    display: inline-flex;
-  }
-
-  .tag {
-    padding: 0 0 0 16px;
-    color: grey;
-  }
-
-  .personal {
-    color: #F515EC;
-  }
-  .professional {
-    color: #FA0808;
-  }
-  .hobby {
-    color: #2F14D7;
-  }
-  .sport {
-    color: #0FBE16;
-  }
-  .skill {
-    color: #FB8E0F;
-  }
-  /*  */
 </style>

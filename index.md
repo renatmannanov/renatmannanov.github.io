@@ -21,10 +21,10 @@ title: "raymann's story"
                 {% assign date = currentdate %}
             {% endif %}
 
-            {% if post.tags contains 'skill' %}
-            {% include skill-card.html title=post.title url=post.url tags=post.tags %}
-            {% else%}
-            {% include short-read-card.html title=post.title url=post.url tags=post.tags %}
+            {% if post.tags %}
+            {% include cards.html title=post.title url=post.url tags=post.tags %}
+            {% else %}
+            "no more posts"
             {% endif %}
 
         {% if forloop.last %}</div>{% endif %}

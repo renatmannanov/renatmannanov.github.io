@@ -1,52 +1,55 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: 'en-US' }}">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=IBM Plex Mono' rel='stylesheet'>
-  </head>
 
-  <body>
-    <div class="frame">
-      <div class="title">
-        {{ page.title }}
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=IBM Plex Mono' rel='stylesheet'>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+  <div class="frame">
+    <div class="title">
+      {{ page.title }}
+    </div>
+
+    <div class="cat-tag-line">
+      <div class="categories-line">
+        {% for category in page.categories %}
+        <div class="categories {{ category }}">
+          #{{ category }}
+        </div>
+        {% endfor %}
       </div>
 
-      <div class="cat-tag-line">
-        <div class="categories-line">
-          {% for category in page.categories %}
-          <div class="categories {{ category }}">
-            #{{ category }}
-          </div>
-          {% endfor %}
+      <div class="tags-line">
+        {% for tag in page.tags %}
+        <div class="tag {{ tag }}">
+          #{{ tag }}
         </div>
-
-        <div class="tags-line">
-          {% for tag in page.tags %}
-          <div class="tag {{ tag }}">
-            #{{ tag }}
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-
-      <div class="content">
-        {{ content }}
+        {% endfor %}
       </div>
     </div>
 
-    <!-- придумал как связать скилы и посты -->
-    <!-- {% for skill in page.skills %}
+    <div class="content">
+      {{ content }}
+    </div>
+  </div>
+
+  <!-- придумал как связать скилы и посты -->
+  <!-- {% for skill in page.skills %}
     <a href="{{ site.baseurl }}blog/{{ skill }}">{{ skill }}</a>
     {% endfor %} -->
 
-  </body>
+</body>
+
 </html>
 
 <style>
   html body {
     height: 93vh;
-    font-family: 'IBM Plex Mono';
   }
+
   .frame {
     border: 1px solid;
     border-color: black;
@@ -55,44 +58,4 @@
     margin: 30px 0 30px 22px;
     padding: 16px 14px;
   }
-
-  /* объединить в мейн.ксс со стилями их шорт-рид */
-  .title {
-    font-size: 24px;
-    line-height: 24px;
-  }
-
-  .content {
-    font-size: 16px;
-  }
-
-  .cat-tag-line {
-    display: inline-flex;
-  }
-
-  .tags-line {
-    display: inline-flex;
-  }
-
-  .tag {
-    padding: 0 0 0 16px;
-    color: grey;
-  }
-
-  .personal {
-    color: #F515EC;
-  }
-  .professional {
-    color: #FA0808;
-  }
-  .hobby {
-    color: #2F14D7;
-  }
-  .sport {
-    color: #0FBE16;
-  }
-  .skill {
-    color: #FB8E0F;
-  }
-  /*  */
 </style>
