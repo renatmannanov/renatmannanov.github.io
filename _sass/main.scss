@@ -23,6 +23,10 @@ body {
 // настройки расположения
 .cat-tag-line {
   display: inline-flex;
+}
+
+.card .cat-tag-line {
+  display: inline-flex;
   position: absolute;
   bottom: 0;
 }
@@ -84,5 +88,52 @@ body {
 }
 .content {
   font-size: 16px;
+}
+//
+
+// стили для карточек
+.card {
+  border: 1px solid;
+  border-color: black;
+  margin: 20px 20px 0 0;
+  height: 205px;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 16px 14px;
+  height: 80%;
+  position: relative;
+
+  /* временно пока не придумаю как адекватно скрыть/ограничить/растягивать теги */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /*  */
+}
+
+.title {
+  /* таким образом обезаю заголовок/описание, чтобы не вылезало за края, мб потом ограничивать количестком символов */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  /*  */
+}
+
+.content {
+  /* padding: 20px 0 0 0; */
+
+  /* таким образом обезаю заголовок/описание, чтобы не вылезало за края, мб потом ограничивать количестком символов */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  /*  */
 }
 // 

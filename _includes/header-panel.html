@@ -8,12 +8,22 @@
     <div class="panel">
         <!-- написать, чтобы при клике вешался класс active для постоянного подчеркивания, а при другом клике удалялся -->
         <!-- а также активировать/деактивировать кнопки, если таких тегов/категорий не существует -->
-        <div class="btn subject all" onclick="filterObjects('all')">all</div>
+        <div class="btn subject all" onclick="filterObjects('all')">все</div>
         {% for cat in site.categories %}
-        <div class="btn subject all {{cat | first }}" onclick="filterObjects('{{cat | first }}')">{{cat | first }}
+        <div class="btn subject all {{ cat | first }}" onclick="filterObjects('{{ cat | first }}')">
+            {% assign currentcat = cat | first %}
+            {% if currentcat  == "personal" %}
+                жизнь
+            {% elsif currentcat  == "professional" %}
+                работа
+            {% elsif currentcat  == "sport" %}
+                спорт
+            {% elsif currentcat  == "hobby" %}
+                увлечения
+            {% endif %}
         </div>
         {% endfor %}
-        <div class="btn subject skill" onclick="filterObjects('skill')">skills</div>
+        <div class="btn subject skill" onclick="filterObjects('skill')">навыки</div>
     </div>
 </body>
 
@@ -38,4 +48,5 @@
         text-decoration: underline;
     }
 </style>
+
 </html>
