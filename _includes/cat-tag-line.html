@@ -1,0 +1,37 @@
+<html lang="en">
+<body>
+  <div class="cat-tag-line">
+    <div class="categories-line">
+      {% for category in include.data.categories %}
+      <div class="categories {{ category }}">
+        <!-- #{{ category }} -->
+        {% if category  == "personal" %}
+          #жизнь
+        {% elsif category  == "professional" %}
+          #работа
+        {% elsif category  == "sport" %}
+          #спорт
+        {% elsif category  == "hobby" %}
+          #увлечения
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="tags-line">
+      {% for tag in include.data.tags %}
+      <div class="tag {{ post.tags }}">
+        <!-- #{{ tag }} -->
+        {% if tag  == "long-read" %}
+          #лонг-рид
+        {% elsif tag  == "short-read" %}
+          #шорт-рид
+        {% elsif tag  == "skill" %}
+          #навык
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</body>
+</html>

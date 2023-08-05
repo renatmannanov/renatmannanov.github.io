@@ -8,28 +8,16 @@
 </head>
 
 <body>
+  <div class="header">
+    {% include header-logo.html %}
+  </div>
+
   <div class="frame">
     <div class="title">
       {{ page.title }}
     </div>
 
-    <div class="cat-tag-line">
-      <div class="categories-line">
-        {% for category in page.categories %}
-        <div class="categories {{ category }}">
-          #{{ category }}
-        </div>
-        {% endfor %}
-      </div>
-
-      <div class="tags-line">
-        {% for tag in page.tags %}
-        <div class="tag {{ tag }}">
-          #{{ tag }}
-        </div>
-        {% endfor %}
-      </div>
-    </div>
+    {% include cat-tag-line.html data=page %}
 
     <div class="content">
       {{ content }}
@@ -55,7 +43,7 @@
     border-color: black;
     height: 100%;
     width: 50%;
-    margin: 30px 0 30px 22px;
+    margin: 30px 0 30px 30px;
     padding: 16px 14px;
   }
 </style>

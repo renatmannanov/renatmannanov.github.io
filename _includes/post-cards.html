@@ -14,37 +14,7 @@
         {{ post.content }}
       </div>
 
-      <div class="cat-tag-line">
-        <div class="categories-line">
-          {% for category in post.categories %}
-          <div class="categories {{ category }}">
-            <!-- #{{ category }} -->
-            {% if category  == "personal" %}
-              #жизнь
-            {% elsif category  == "professional" %}
-              #работа
-            {% elsif category  == "sport" %}
-              #спорт
-            {% elsif category  == "hobby" %}
-              #увлечения
-            {% endif %}
-          </div>
-          {% endfor %}
-        </div>
-
-        <div class="tags-line">
-          {% for tag in post.tags %}
-          <div class="tag {{ post.tags }}">
-            <!-- #{{ tag }} -->
-            {% if tag  == "long-read" %}
-              #лонг-рид
-            {% elsif tag  == "short-read" %}
-              #шорт-рид
-            {% endif %}
-          </div>
-          {% endfor %}
-        </div>
-      </div>
+      {% include cat-tag-line.html data=post %}
 
     </div>
   </a>
