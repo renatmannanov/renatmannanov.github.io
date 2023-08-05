@@ -16,21 +16,42 @@
   <div class="info-cards">
 
     <div class="main-info-cards">
-      <div class="blog-card">
-        {% include info-cards.html type="blog" title="блог" description="dfdfgdfg" %}
-      </div>
-      <div class="contribution-card">
-        {% include info-cards.html type="contribution" title="сотрудничество" description="bdfbdfbdfb" %}
-      </div>
+
+        {% 
+          include info-cards.html
+          url="/blog.html"
+          type="blog" 
+          title="блог" 
+          description="пишу о житейских и рабочих историях, спорте и увлечениях, которые кажутся мне интересными и каким-то образом повлияли на мой трек развития. События, идеи и интересные пересечения между сферами" 
+        %}
+
+        {% 
+          include info-cards.html
+          type="contribution"
+          url="#"
+          title="сотрудничество" 
+          description="темы в которых я силен и можно со мной поработать" %}
+
     </div>
 
     <div class="secondary-info-cards">
-      <div class="skills-card">
-        {% include info-cards.html type="skills" title="навыки" description="dfbdfbdfbdfb" %}
-      </div>
-      <div class="track-card">
-        {% include info-cards.html type="track" title="трек" description="dfbdfbdfbf" %}
-      </div>
+
+        {% 
+          include info-cards.html
+          url="#"
+          type="skills" 
+          title="навыки" 
+          description="навыки и таймлайн их освоения" 
+        %}
+
+        {% 
+          include info-cards.html
+          url="#"
+          type="track" 
+          title="трек" 
+          description="подробные пути моего развития с важными чек-поинтами. техниками и развивающими действиями (без воды как в блогах)" 
+        %}
+
     </div>
 
   </div>
@@ -41,6 +62,8 @@
 <style>
   .greatings {
     margin: 30px;
+    font-size: 22px;
+    line-height: 24px;
   }
 
   .info-cards {

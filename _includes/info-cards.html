@@ -5,10 +5,15 @@
 </head>
 
 <body>
-  <div class="card {{ include.type }}" href="{{ post.url }}">
+  <a class="card {{ include.type }}" href="{{ include.url }}">
     <div class="container">
       <div class="title">
         {{ include.title }}
+
+        {% if include.type == "skills" or include.type == "track" %}
+        <p class="in-backlog">в разработке</p>
+        {% endif %}
+
       </div>
       <div class="content">
         <p>
@@ -35,7 +40,7 @@
       </div> -->
 
     </div>
-  </div>
+  </a>
 </body>
 
 <style>
@@ -46,7 +51,40 @@
 
   .card.skills, .card.track {
     height: 205px;
-    min-width: 460px;
+    width: 460px;
+    border-color: grey;
+  }
+
+  .card.blog .title {
+    color: #F515EC;
+  }
+
+  .card.contribution .title {
+    color: #FA0808;
+  }
+
+  .card.skills .title {
+    color: #FB8E0F;
+  }
+
+  .card.track .title {
+    color: #2F14D7;
+  }
+
+  .card.skills .title, .card.track .title {
+    display: inline-flex;
+  }
+
+  .in-backlog {
+    font-size: 24px;
+    line-height: 24px;
+    color: grey;
+    padding: 0 0 0 10px;
+    align-self: center;
+  }
+
+  .card.skills:hover, .card.track:hover {
+    box-shadow: 0 0px 0px 0 rgba(248, 247, 247, 0.2) !important;
   }
 </style>
 
