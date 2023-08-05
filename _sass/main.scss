@@ -15,8 +15,9 @@ body {
   background-color: #ffff;
   padding: 20px;
   line-height: 24px;
-  font-size: 24px;
+  font-size: 28px;  
   color: black;
+  display: grid;
 }
 
 p {
@@ -46,17 +47,21 @@ p {
   bottom: 0;
 }
 
+.categories, .tag {
+  display: inline-flex;
+}
+
 .tags-line {
   display: inline-flex;
 }
 
 .tag {
-  padding: 0 0 0 16px;
+  padding: 0 0 0 10px;
   color: grey;
 }
 // цвета
 .personal {
-  color: #F515EC;
+  color: #AE15F5;
 }
 .professional {
   color: #FA0808;
@@ -65,13 +70,10 @@ p {
   color: #2F14D7;
 }
 .sport {
-  color: #0FBE16;
+  color: #0B9010;
 }
-.tag.skill {
-  color: #FB8E0F;
-}
-.btn.skill {
-  color: #FB8E0F;
+.tag.skill, .btn.skill {
+  color: #F88805;
 }
 // 
 

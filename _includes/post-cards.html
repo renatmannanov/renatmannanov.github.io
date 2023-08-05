@@ -5,29 +5,29 @@
 </head>
 
 <body>
-  <a class="card box {{ post.tags }} {{ post.categories }}" href="{{ post.url }}">
+  <a class="card box {{ include.type }} {{ post.tags }} {{ post.categories }}" href="{{ post.url }}">
     <div class="container">
       <div class="title">
-        {{ post.title}}
+        {{ include.title}}
       </div>
       <div class="content">
         {{ post.content }}
       </div>
-
+      
       {% include cat-tag-line.html data=post %}
 
     </div>
   </a>
-  <script src="scripts.js"></script>
+  <script src="/scripts.js"></script>
 </body>
 
 <style>
   /* классы  box и show для фильтрации по категориям*/
-  .box {
+  .box.blog {
     display: none;
   }
 
-  .show {
+  .show.blog {
     display: block;
   }
   /*  */

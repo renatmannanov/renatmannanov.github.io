@@ -1,6 +1,8 @@
 <html lang="en">
 <body>
+
   <div class="cat-tag-line">
+
     <div class="categories-line">
       {% for category in include.data.categories %}
       <div class="categories {{ category }}">
@@ -20,7 +22,7 @@
 
     <div class="tags-line">
       {% for tag in include.data.tags %}
-      <div class="tag {{ post.tags }}">
+      <div class="tag {{ include.data.tags }}">
         <!-- #{{ tag }} -->
         {% if tag  == "long-read" %}
           #лонг-рид
@@ -32,6 +34,8 @@
       </div>
       {% endfor %}
     </div>
+    
   </div>
+
 </body>
 </html>

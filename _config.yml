@@ -8,6 +8,8 @@ collections:
   posts:
     output: true
     permalink: /blog/:title
+  skills:
+    output: true
 
 sass:
     sass_dir: _sass

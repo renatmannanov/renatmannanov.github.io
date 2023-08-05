@@ -12,22 +12,34 @@
     {% include header-logo.html %}
   </div>
 
-  <div class="frame">
-    <div class="title">
-      {{ page.title }}
+  <div class="main-frame">  
+    <div class="frame">
+      <div class="title">
+        {{ page.title }}
+      </div>
+
+      {% include cat-tag-line.html data=page %}
+
+      <div class="content">
+        {{ content }}
+      </div>
     </div>
 
-    {% include cat-tag-line.html data=page %}
+    <!-- <div class="connection-frame">
+      {% include connection-block.html %}
 
-    <div class="content">
-      {{ content }}
-    </div>
+      <div class="card-box">
+        {% for skill in page.skills %}
+          {% assign currenturl = "{{ site.baseurl }}blog/{{ skill }}" %}
+          {% include post-cards.html title=skill type="post" %}
+        {% endfor %}
+      </div>
+    </div> -->
+
+
   </div>
 
-  <!-- придумал как связать скилы и посты -->
-  <!-- {% for skill in page.skills %}
-    <a href="{{ site.baseurl }}blog/{{ skill }}">{{ skill }}</a>
-    {% endfor %} -->
+
 
 </body>
 
@@ -38,10 +50,16 @@
     height: 93vh;
   }
 
+  .main-frame {
+    display: inline-flex;
+    width: 100%;
+    height: 93vh;
+  }
+
   .frame {
     border: 1px solid;
     border-color: black;
-    height: 100%;
+    height: 90%;
     width: 50%;
     margin: 30px 0 30px 30px;
     padding: 16px 14px;

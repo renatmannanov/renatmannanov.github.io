@@ -1,33 +1,23 @@
 <html lang="{{ site.lang | default: 'en-US' }}">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-
   <body>
-    <div class="connection-line">
-        <div class="year-text">
-            impact
-        </div>
-        <hr>
-    </div>
-
-    <div>
-        <!-- {% for post in site.posts %}
-
-            {% include short-read-card.html title=post.title url=post.url %}
-
-        {% endfor %} -->
+    <div class="yearbox">
+        <div class="yeartext">impact</div>
+        <hr class="yearline"/>
     </div>
   </body>
 
   <style>
-    .connection-line {
-        display: inline;
-        width: 100%;
+    .yearbox {
+        padding: 30px;
+        margin: 0 30px 0 0;
+        font-size: 24px;
+        line-height: 24px;
+        display: inline-flex;
+        width: 95%;
     }
 
-    .year-text {
-        font-size: 24px;
+    .yearline {
+        width: 95%;
     }
     </style>
 </html>

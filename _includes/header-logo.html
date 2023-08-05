@@ -8,16 +8,48 @@
 
 <body>
     <!-- <div class="logo">ray mann's story</div> -->
-    <div class="logo">р.м.стори</div>
+    <a class="logo" href="/">
+        <!-- р.м.стори -->
+        <p class="p-letter">р.</p>
+        <p class="m-letter">м.</p>
+        <p class="s-letter">с</p>
+        <p class="t-letter">т</p>
+        <p class="o-letter">о</p>
+        <p class="r-letter">р</p>
+        <p class="y-letter">и</p>
+    </a>
 </body>
 
 <style>
 
-
-    div.logo {
+    a.logo {
         text-align: left;
         padding: 10px 10px 0 10px;
         text-decoration: none;
+        color: black;
+        display: inline-flex;
+    }
+
+    .p-letter:hover {
+        color: #AE15F5
+    }
+    .m-letter:hover {
+        color: #FA0808
+    }
+    .s-letter:hover {
+      color: #2F14D7
+    }
+    .t-letter:hover {
+        color: #0B9010
+    }
+    .o-letter:hover {
+        color: #F88805
+    }
+    .r-letter:hover {
+        color: grey;
+    }
+    .y-letter:hover {
+        color: #037d81
     }
 
     .header div.panel a {
@@ -44,8 +76,6 @@
     .subject.active {
         text-decoration: underline;
     }
-
-
 
     @media screen and (max-width: 500px) {
         .header a {

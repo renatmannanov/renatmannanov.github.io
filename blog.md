@@ -24,7 +24,7 @@ title: "raymann's story"
                 {% assign date = currentdate %}
             {% endif %}
 
-            {% include post-cards.html title=post.title url=post.url tags=post.tags %}
+            {% include post-cards.html title=post.title url=post.url tags=post.tags type="blog" %}
 
         {% if forloop.last %}</div>{% endif %}
 
