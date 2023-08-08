@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "raymann's story"
+title: "ray mann's story"
 ---
 
 <html lang="{{ site.lang | default: 'en-US' }}">

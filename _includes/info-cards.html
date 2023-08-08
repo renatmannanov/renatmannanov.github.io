@@ -1,8 +1,4 @@
-<html lang="{{ site.lang | default: 'en-US' }}">
-
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+<html>
 
 <body>
   <a class="card {{ include.type }}" href="{{ include.url }}">
@@ -10,8 +6,8 @@
       <div class="title">
         {{ include.title }}
 
-        {% if include.type == "skills" or include.type == "track" %}
-        <p class="in-backlog">в разработке</p>
+        {% if include.type == "skills" or include.type == "track" or include.type == "contribution" %}
+        <div class="in-backlog">в разработке</div>
         {% endif %}
 
       </div>
@@ -71,7 +67,7 @@
     color: #2F14D7;
   }
 
-  .card.skills .title, .card.track .title {
+  .card.skills .title, .card.track .title, .card.contribution .title {
     display: inline-flex;
   }
 
@@ -83,7 +79,7 @@
     align-self: center;
   }
 
-  .card.skills:hover, .card.track:hover {
+  .card.skills:hover, .card.track:hover, .card.contribution:hover {
     box-shadow: 0 0px 0px 0 rgba(248, 247, 247, 0.2) !important;
   }
 </style>

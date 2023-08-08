@@ -1,6 +1,6 @@
 ---
 # layout: default
-title: "raymann's story"
+title: "ray mann's blog"
 ---
 
 <div class="header">
