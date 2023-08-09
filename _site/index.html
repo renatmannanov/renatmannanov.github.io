@@ -96,18 +96,6 @@
     .subject.active {
         text-decoration: underline;
     }
-
-    @media screen and (max-width: 500px) {
-        .header a {
-            float: none;
-            display: block;
-            text-align: left;
-        }
-
-        .header-right {
-            float: none;
-        }
-    }
 </style>
 </html>
   </div>
@@ -198,6 +186,34 @@
   .card.skills:hover, .card.track:hover, .card.contribution:hover {
     box-shadow: 0 0px 0px 0 rgba(248, 247, 247, 0.2) !important;
   }
+
+  @media screen and (max-width: 500px) {
+    .card.blog, .card.contribution {
+      height: 250px;
+      width: 100%;
+    }
+
+    .card.skills, .card.track {
+      height: 205px;
+      width: 100%;
+      border-color: grey;
+    }
+
+    .card.skills .title, .card.track .title, .card.contribution .title {
+      display: grid;
+    }
+
+    .in-backlog {
+      font-size: 18px;
+      line-height: 20px;
+      color: grey;
+      padding: 0;
+    }
+
+    .card.blog .content, .card.contribution .content{
+      overflow: visible;
+    }
+  }
 </style>
 
 </html>
@@ -277,6 +293,34 @@
 
   .card.skills:hover, .card.track:hover, .card.contribution:hover {
     box-shadow: 0 0px 0px 0 rgba(248, 247, 247, 0.2) !important;
+  }
+
+  @media screen and (max-width: 500px) {
+    .card.blog, .card.contribution {
+      height: 250px;
+      width: 100%;
+    }
+
+    .card.skills, .card.track {
+      height: 205px;
+      width: 100%;
+      border-color: grey;
+    }
+
+    .card.skills .title, .card.track .title, .card.contribution .title {
+      display: grid;
+    }
+
+    .in-backlog {
+      font-size: 18px;
+      line-height: 20px;
+      color: grey;
+      padding: 0;
+    }
+
+    .card.blog .content, .card.contribution .content{
+      overflow: visible;
+    }
   }
 </style>
 
@@ -362,6 +406,34 @@
   .card.skills:hover, .card.track:hover, .card.contribution:hover {
     box-shadow: 0 0px 0px 0 rgba(248, 247, 247, 0.2) !important;
   }
+
+  @media screen and (max-width: 500px) {
+    .card.blog, .card.contribution {
+      height: 250px;
+      width: 100%;
+    }
+
+    .card.skills, .card.track {
+      height: 205px;
+      width: 100%;
+      border-color: grey;
+    }
+
+    .card.skills .title, .card.track .title, .card.contribution .title {
+      display: grid;
+    }
+
+    .in-backlog {
+      font-size: 18px;
+      line-height: 20px;
+      color: grey;
+      padding: 0;
+    }
+
+    .card.blog .content, .card.contribution .content{
+      overflow: visible;
+    }
+  }
 </style>
 
 </html>
@@ -442,6 +514,34 @@
   .card.skills:hover, .card.track:hover, .card.contribution:hover {
     box-shadow: 0 0px 0px 0 rgba(248, 247, 247, 0.2) !important;
   }
+
+  @media screen and (max-width: 500px) {
+    .card.blog, .card.contribution {
+      height: 250px;
+      width: 100%;
+    }
+
+    .card.skills, .card.track {
+      height: 205px;
+      width: 100%;
+      border-color: grey;
+    }
+
+    .card.skills .title, .card.track .title, .card.contribution .title {
+      display: grid;
+    }
+
+    .in-backlog {
+      font-size: 18px;
+      line-height: 20px;
+      color: grey;
+      padding: 0;
+    }
+
+    .card.blog .content, .card.contribution .content{
+      overflow: visible;
+    }
+  }
 </style>
 
 </html>
@@ -463,11 +563,24 @@
   .info-cards {
     margin: 30px;
     display: grid;
+    max-width: 90%;
   }
 
   .main-info-cards, .secondary-info-cards {
     display: inline-flex;
   }
+
+  @media screen and (max-width: 500px) {
+    .main-info-cards, .secondary-info-cards {
+      width: 90%;
+      display: grid;
+  }
+    .greatings {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+
 </style>  
 
 

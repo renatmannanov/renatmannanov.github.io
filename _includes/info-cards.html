@@ -82,6 +82,34 @@
   .card.skills:hover, .card.track:hover, .card.contribution:hover {
     box-shadow: 0 0px 0px 0 rgba(248, 247, 247, 0.2) !important;
   }
+
+  @media screen and (max-width: 500px) {
+    .card.blog, .card.contribution {
+      height: 250px;
+      width: 100%;
+    }
+
+    .card.skills, .card.track {
+      height: 205px;
+      width: 100%;
+      border-color: grey;
+    }
+
+    .card.skills .title, .card.track .title, .card.contribution .title {
+      display: grid;
+    }
+
+    .in-backlog {
+      font-size: 18px;
+      line-height: 20px;
+      color: grey;
+      padding: 0;
+    }
+
+    .card.blog .content, .card.contribution .content{
+      overflow: visible;
+    }
+  }
 </style>
 
 </html>

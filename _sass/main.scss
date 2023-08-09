@@ -143,4 +143,35 @@ body {
   -webkit-box-orient: vertical;
   /*  */
 }
-// 
+//
+
+@media screen and (max-width: 500px) {
+  .yearline {
+    width: 70%;
+  }
+  
+  .cardbox {
+    margin: 10px 30px 30px 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card.skill .title {
+    overflow: visible;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .card.skill .cat-tag-line {
+    padding: 0 0 10px 0;
+  }
+
+  .card.skill .categories-line {
+    display: none;
+  }
+
+  .card.skill .tag.skill {
+    padding: 0;
+  }
+
+}

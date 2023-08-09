@@ -62,9 +62,22 @@
   .info-cards {
     margin: 30px;
     display: grid;
+    max-width: 90%;
   }
 
   .main-info-cards, .secondary-info-cards {
     display: inline-flex;
   }
+
+  @media screen and (max-width: 500px) {
+    .main-info-cards, .secondary-info-cards {
+      width: 90%;
+      display: grid;
+  }
+    .greatings {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+
 </style>  
