@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=IBM Plex Mono' rel='stylesheet'>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <title>Как это работает</title>
+</head>
+
+<body>
+  <div class="header">
+    <html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Mono' rel='stylesheet'>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>Как это работает</title>
+</head>
+
+<body>
+    <!-- <div class="logo">ray mann's story</div> -->
+    <a class="logo" href="/">
+        <!-- р.м.стори -->
+        <div class="p-letter">р.</div>
+        <div class="m-letter">м.</div>
+        <div class="s-letter">с</div>
+        <div class="t-letter">т</div>
+        <div class="o-letter">о</div>
+        <div class="r-letter">р</div>
+        <div class="y-letter">и</div>
+    </a>
+</body>
+
+<style>
+
+    a.logo {
+        text-align: left;
+        padding: 10px 10px 0 10px;
+        text-decoration: none;
+        color: black;
+        display: inline-flex;
+    }
+
+    .p-letter:hover {
+        color: #AE15F5
+    }
+    .m-letter:hover {
+        color: #FA0808
+    }
+    .s-letter:hover {
+      color: #2F14D7
+    }
+    .t-letter:hover {
+        color: #0B9010
+    }
+    .o-letter:hover {
+        color: #F88805
+    }
+    .r-letter:hover {
+        color: grey;
+    }
+    .y-letter:hover {
+        color: #037d81
+    }
+
+    .header div.panel a {
+        float: left;
+        padding: 0 10px 10px 10px;
+    }
+
+    .panel {
+        display: inline-flex;
+        padding: 0px 10px 0 10px;
+    }
+
+    .subject {
+        text-decoration: none;
+        padding: 0 20px 0 0;
+        cursor: pointer;
+    }
+
+    .subject:hover {
+        text-decoration: underline;
+
+    }
+
+    .subject.active {
+        text-decoration: underline;
+    }
+</style>
+</html>
+  </div>
+
+  <div class="main-frame">  
+    <div class="frame">
+      <div class="title">
+        Как это работает
+      </div>
+
+      <html>
+<body>
+
+  <div class="cat-tag-line">
+
+    <div class="categories-line">
+      
+      <div class="categories professional">
+        <!-- #professional -->
+        
+          #работа
+        
+      </div>
+      
+    </div>
+
+    <div class="tags-line">
+      
+      <div class="tag shortread">
+        <!-- #shortread -->
+        
+          #шортрид
+        
+      </div>
+      
+    </div>
+    
+  </div>
+
+</body>
+</html>
+
+      <div class="content">
+        <p>Сделал для себя сайт/блог/визитку. Пишу там всякое, делюсь интересным, собираю знания и мысли, рассказываю про технически коллаборации.</p>
+
+<p>Сам сайт собран с помощью Github pages + Jekyll.
+Если коротко, “гитхаб страницы” дают возможность размещать свой сайт без каких либо серверов, напрямую из их репозиториев, а Jekyll превращает текст в статичный сайт (вжух!).<br />
+Дизайн нарисовал сам, сверстал тоже сам.</p>
+
+<p>Дальше прокинул интеграцию между Github и соц. сетями с помощью Make - платформа, в которой из кружочков можно собрать простую логику и интегрировать разные платформы друг с другом.</p>
+<ol>
+  <li>пишу пост/добавляю файл в нужную папку через Github;</li>
+  <li>Github отправляет вебхук(сигнал) в Make;</li>
+  <li>Make принимает сигнал, немножко магии и упоротости (т.к. по простому сделать не вышло);</li>
+  <li>Еще немного задротства, чтобы более менее отредактировать текст (убрать технический код);</li>
+  <li>вуаля, сначала текст отправляется в Телеграм (через бота), потом в Facebook (такая последовательность, чтобы сохранить отступы в тексте).</li>
+</ol>
+
+<p><strong>Что хочу еще сделать:</strong></p>
+<ol>
+  <li>теги расположить друг за другом, чтобы занимали меньше места;</li>
+  <li>добавить ссылку на сайт к каждому посту в соц.сетях;</li>
+  <li>придумать как постить в Instagram, т.к. там обязательно нужна картинка/фотка. Придется генерировать через AI, либо найти редактор и придумать прикольный формат картинок-заголовков (в Телеграмме и FB тоже думаю будут смотреться).</li>
+</ol>
+
+<p><strong>Минусы:</strong></p>
+<ol>
+  <li>все таки быстрее и проще собрать сайт на Tilda, Wordpress и подобных;</li>
+  <li>или взять готовые шаблоны для Jekyll;</li>
+  <li>надо немного уметь писать код, настраивать окружение, верстать! (последнее бывает очень противным занятием);</li>
+  <li>и еще надо уметь работать с Git’ом, что тоже не всегда просто;</li>
+  <li>зачем вообще так заморачиваться?</li>
+</ol>
+
+<p><strong>Плюсы:</strong></p>
+<ol>
+  <li>именно заморочка, интересное усложнение, лично меня мотивирует (немного написал об этом в первом посте и буду дополнять позже);</li>
+  <li>интеграции/коллаборации - пишу в одном месте, появляется в 2-х, а будет в 4-х (хотя скорее всего с другими платформами тоже можно было интегрироваться);</li>
+  <li>сделать что-то свое, как тебе хочется + хранение информации;</li>
+  <li>гибкость - сделать можно много всего интересного и уникального;</li>
+  <li>один из способов учиться писать код, да и вообще разобраться в it’шной среде (если оно конечно нужно);</li>
+  <li>*есть кейсы для компаний, напишу как-нибудь отдельно.</li>
+</ol>
+
+<p>Если вдруг захочется разобраться как работает Github pages, велкам!<br />
+Объясню как для мамы ;)</p>
+
+      </div>
+    </div>
+
+    <!-- <div class="connection-frame">
+      <html>
+  <body>
+    <div class="yearbox">
+        <div class="yeartext">impact</div>
+        <hr class="yearline"/>
+    </div>
+  </body>
+
+  <style>
+    .yearbox {
+        padding: 30px;
+        margin: 0 30px 0 0;
+        font-size: 24px;
+        line-height: 24px;
+        display: inline-flex;
+        width: 95%;
+    }
+
+    .yearline {
+        width: 95%;
+    }
+    </style>
+</html>
+
+
+      <div class="card-box">
+        
+      </div>
+    </div> -->
+
+
+  </div>
+
+
+
+</body>
+
+</html>
+
+<style>
+  html body {
+    height: 93vh;
+  }
+
+  .main-frame {
+    display: inline-flex;
+    width: 100%;
+    min-height: 93vh;
+  }
+
+  .frame {
+    border: 1px solid;
+    border-color: black;
+    min-height: 90%;
+    width: 50%;
+    margin: 20px 0 30px 30px;
+    padding: 16px 14px;
+  }
+
+  
+  @media screen and (max-width: 500px) {
+
+    .frame {
+    min-height: 90%;
+    width: 80%;
+  }
+
+  }
+</style>
