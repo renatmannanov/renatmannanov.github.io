@@ -14,8 +14,8 @@ title: "ray mann's contribution"
     </div>
 
     <div class=cardbox>
-    
-    {% for offer in site.offers %}
+    {% assign sorted_offers = site.offers | sort: "order"%}
+    {% for offer in sorted_offers %}
         
         {% 
           include offer-cards.html
