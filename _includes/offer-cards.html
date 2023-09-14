@@ -1,0 +1,65 @@
+<html>
+
+<body>
+  <a class="card offer">
+    <div class="container">
+
+      <div class="title-fake">
+        {{ offer.title_fake }}
+      </div>
+
+      <div class="title">
+        {{ offer.title }}
+      </div>
+
+      <div class="content">
+        <p>
+          {{ offer.content }}
+        </p>
+      </div>
+
+    </div>
+  </a>
+</body>
+
+<style>
+  .card.offer {
+    height: 678px;
+    max-width: 530px;
+  }
+
+  .title-fake {
+    text-decoration: line-through;
+  }
+
+  @media screen and (max-width: 500px) {
+
+    .card.blog, .card.contribution {
+      height: 250px;
+      /* width: 100%; */
+    }
+
+    .card.skills, .card.track {
+      height: 205px;
+      width: 100%;
+      border-color: grey;
+    }
+
+    .card.skills .title, .card.track .title, .card.contribution .title {
+      display: grid;
+    }
+
+    .in-backlog {
+      font-size: 18px;
+      line-height: 20px;
+      color: grey;
+      padding: 0;
+    }
+
+    .card.blog .content, .card.contribution .content{
+      overflow: visible;
+    }
+  }
+</style>
+
+</html>

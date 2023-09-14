@@ -1,5 +1,5 @@
 ---
-# layout: default
+layout: default
 title: "ray mann's blog"
 ---
 
